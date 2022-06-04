@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Hero from '../../components/Hero'
 import TourDetails from '../../components/TourDetails'
 import Footer from '../../components/Footer'
-import axios from 'axios'
+import { toursDets,tours } from '../../utils/constants'
 
 const Tours:NextPage = ({ tourDets,tour }:any) => {
     return (
@@ -37,10 +37,7 @@ const Tours:NextPage = ({ tourDets,tour }:any) => {
      }
   }
 
-  export async function getStaticProps({req,params:{tourType}}:any) {
-    
-    const res = await fetch(`${process.env.NEXT_PUBLIC_VERCEL_URL}/api/getData`)
-    const {toursDets,tours} = await res.json()
+  export async function getStaticProps({params:{tourType}}:any) {
 
     const tourDets = toursDets.filter((trDets:any)=> trDets.id === tourType )[0]
     const tour = tours.filter((tr:any)=> tr.id === tourType )[0]
