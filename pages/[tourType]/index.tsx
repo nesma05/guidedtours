@@ -21,9 +21,6 @@ const Tours:NextPage = ({ tourDets,tour }:any) => {
 
   export async function getStaticPaths(){
 
-    const res = await fetch(`${process.env.BASE_URL}/api/getData`)
-    const {tours} = await res.json()
-
     const paths = tours.map((tr:any)=>{
       return {
         params:{
