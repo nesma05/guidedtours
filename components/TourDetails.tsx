@@ -77,7 +77,7 @@ const TourDetails = ({ tourDets,tour }:any) => {
             )}
             {tourDets.paragraphs2.length != 0 && (
               <div className="space-y-4">
-                {tourDets.paragraphs.map((para:any,i:any) => (
+                {tourDets.paragraphs2.map((para:any,i:any) => (
                   <p key={i}>{para}</p>
                 ))}
               </div>

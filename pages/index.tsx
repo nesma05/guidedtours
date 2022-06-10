@@ -8,7 +8,6 @@ import WalkingTour from '../components/WalkingTour'
 import Footer from '../components/Footer'
 
 const Home: NextPage = () => {
-  console.log(process.cwd())
   return (
     <>
     <Navbar/>

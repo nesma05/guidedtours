@@ -38,8 +38,7 @@ const Tours:NextPage = ({ tourDets,tour }:any) => {
 
     const tourDets = toursDets.filter((trDets:any)=> trDets.id === tourType )[0]
     const tour = tours.filter((tr:any)=> tr.id === tourType )[0]
-    console.log('tourDets',tourDets)
-    console.log('tour',tour)
+  
     return {
       props:{
         tourDets,

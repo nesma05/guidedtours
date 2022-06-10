@@ -93,9 +93,9 @@ export const toursDets = [
     description: `The walking tour focuses on the historical , cultural and architectural
   heritage of Tangier`,
     infoList: [
-      { name: 'Duration', value: '3 Hours' },
+      { name: 'Duration', value: '4 Hours' },
       { name: 'Schedule', value: 'from 9 am onward daily' },
-      { name: 'Departure Point', value: 'Sea Port' },
+      { name: 'Departure Point', value: 'Sea Port unless agreed otherwise' },
     ],
     tourList1: [],
     text: [
@@ -167,7 +167,7 @@ export const toursDets = [
     paragraphs2: [],
     pricesDetails:{
       image:"/img/group-tour-details.jpg",
-      prices:[{category:'Adult', price:'$30'},{category:'Youth (Ages 12-16)', price:'$30'},{category:'Child (Ages 11 and Under)', price:'Free'}]
+      prices:[{category:'Adult', price:'$40'},{category:'Youth (Ages 12-16)', price:'$22.50'},{category:'Child (Ages 11 and Under)', price:'Free'}]
     }
   },
   {
@@ -208,7 +208,7 @@ export const toursDets = [
     ],
     pricesDetails:{
       image:"/img/private-tour-details.jpg",
-      prices:[{category:'Half Day (3.5 Hours)', price:'$195'},{category:'Full Day (7 Hours)', price:'$345'}]
+      prices:[{category:'Adult', price:'$60'},{category:'Youth (Ages 12-16)', price:'$25'},{category:'Child (Ages 11 and Under)', price:'Free'}]
     }
   },
 ]

@@ -4,7 +4,7 @@ import { walkingTour } from '../utils/constants'
 const WalkingTour = () => {
   return (
     <section>
-      <div className="flex flex-col items-center md:flex-row-reverse gap-20 px-10 py-20 bg-[#f2f2f3]">
+      <div className="flex flex-col items-center md:flex-row gap-20 px-10 py-20 bg-[#f2f2f3]">
         <div className="basis-1/2">
           <h2 className="mb-4 text-3xl">The Walking Tour</h2>
           <div className="flex flex-col gap-4">

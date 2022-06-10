@@ -35,7 +35,14 @@ const Navbar = () => {
   return (
     <header>
       <div className="relative flex flex-wrap items-center justify-between py-3 px-2 sm:py-2 sm:px-8">
-        <Image src={'/img/logo.png'} width={200} height={70} />
+        <NextLink href={'/'} passHref>
+          <Image
+            src={'/img/logo.png'}
+            width={200}
+            height={70}
+            className="cursor-pointer"
+          />
+        </NextLink>
         <nav className="order-last flex items-center md:order-none">
           <ul className="relative hidden gap-6 text-lg font-light md:flex ">
             <NextLink href={'/'} passHref>
@@ -95,6 +102,11 @@ const Navbar = () => {
                 </NextLink>
               </ul>
             </li>
+            <NextLink href={'/contact'} passHref>
+              <li className="cursor-pointer" aria-label="contact us">
+                Contact us
+              </li>
+            </NextLink>
           </ul>
           <div
             className="cursor-pointer space-y-2 md:hidden"
@@ -117,9 +129,11 @@ const Navbar = () => {
             ></span>
           </div>
         </nav>
-        <div className="transtion order-last flex h-12 w-full cursor-pointer items-center justify-center rounded bg-[#963f45] px-8 font-thin tracking-wide text-white duration-200 hover:bg-[#6d2f33] sm:order-none sm:w-fit">
-          BOOK MY WALKING TOUR
-        </div>
+        <NextLink href={'/contact'} passHref>
+          <div className="transtion order-last flex h-12 w-full cursor-pointer items-center justify-center rounded bg-[#963f45] px-8 font-thin tracking-wide text-white duration-200 hover:bg-[#6d2f33] sm:order-none sm:w-fit">
+            BOOK MY WALKING TOUR
+          </div>
+        </NextLink>
         <ul
           className={`menu-shadow absolute top-[105%] z-30 w-[97%] bg-white p-2 transition duration-500 sm:w-[92%] md:hidden ${
             mobileMenu
@@ -128,15 +142,27 @@ const Navbar = () => {
           }`}
         >
           <NextLink href={'/'} passHref>
-            <li className="cursor-pointer border-b-2 p-2">Home</li>
+            <li className="cursor-pointer border-b-2 p-2 transition-colors duration-300 hover:bg-gray-200">
+              Home
+            </li>
           </NextLink>
           <NextLink href={'/group-tour'} passHref>
-            <li className="cursor-pointer border-b-2 p-2">
+            <li className="cursor-pointer border-b-2 p-2 transition-colors duration-300 hover:bg-gray-200">
               Group Walking Tour
             </li>
           </NextLink>
           <NextLink href={'/private-tour'} passHref>
-            <li className="cursor-pointer p-2">Private Walking Tour</li>
+            <li className="cursor-pointer p-2 transition-colors duration-300 hover:bg-gray-200">
+              Private Walking Tour
+            </li>
+          </NextLink>
+          <NextLink href={'/contact'} passHref>
+            <li
+              className="cursor-pointer p-2 transition-colors duration-300 hover:bg-gray-200"
+              aria-label="contact us"
+            >
+              Contact us
+            </li>
           </NextLink>
         </ul>
       </div>

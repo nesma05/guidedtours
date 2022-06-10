@@ -33,7 +33,9 @@ const card = ({ tour }: cardProps) => {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="text-sm font-thin">{tour.type.toUpperCase()}</span>
+                <span className="text-sm font-thin">
+                  {tour.type.toUpperCase()}
+                </span>
               </div>
               <div className="flex items-center rounded-sm bg-white px-2 py-1 font-thin">
                 <svg
@@ -71,15 +73,26 @@ const card = ({ tour }: cardProps) => {
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4">
-        <h4 className="card-title text-2xl transition duration-300">
-          {tour.title}
-        </h4>
+        <NextLink href={`/${tour.id}`} passHref>
+          <h4 className="card-title cursor-pointer text-2xl transition duration-300">
+            {tour.title}
+          </h4>
+        </NextLink>
         <p className="sm:text-md flex-1 text-lg font-thin">
           {tour.description}
         </p>
-        <button className="rounded-sm bg-[#047857] py-3 px-16 text-white transition duration-300 hover:bg-[#064e3b]">
-          LEARN MORE
-        </button>
+        <div className="flex justify-between">
+          <NextLink href={'contact'} passHref>
+            <button className="basis-[47%] rounded-sm bg-[#047857] py-3 font-light text-white transition duration-300 hover:bg-[#064e3b]">
+              BOOK MY TOUR
+            </button>
+          </NextLink>
+          <NextLink href={`/${tour.id}`} passHref>
+            <button className="basis-[47%] rounded-sm border-2 border-[#047857] py-3 font-light text-[#047857] transition duration-300 hover:bg-[#064e3b] hover:text-white">
+              LEARN MORE
+            </button>
+          </NextLink>
+        </div>
       </div>
     </div>
   )
