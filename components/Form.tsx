@@ -35,9 +35,22 @@ export default function Home() {
       <h2 className="text-3xl">Contact Us</h2>
       <p className="my-4 max-w-2xl">
         If you have any queries about the tour, please contact Ben sellam (our
-        Business Manager) via telephone at 0621 225 820 (international = +212
-          621 225 820) or via email (tangierguidedtour@gmail.com) or by
-        completing the enquiry form below:
+        Business Manager) via telephone at{' '}
+        <a href="tel:+2126621225820" className="hover:underline">
+          06621 225 820
+        </a>{' '}
+        (international ={' '}
+        <a href="tel:+2126621225820" className="hover:underline">
+          +212 6621 225 820
+        </a>
+        ) or via email ({' '}
+        <a
+          href="mailto:tangierguidedtour@gmail.com"
+          className="hover:underline"
+        >
+          tangierguidedtour@gmail.com
+        </a>
+        ) or by completing the enquiry form below:
       </p>
       <div className="w-full max-w-2xl shadow">
         <form
