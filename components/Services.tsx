@@ -8,7 +8,7 @@ const Services = () => {
     <section>
       <div className="py-20 px-10 sm:px12">
         <div className="bg-gray-100 py-10 px-6 sm:px-10 md:px-32 text-center">
-          <h3 className="mb-2 text-3xl text-[#963f45]">
+          <h3 className="mb-2 text-3xl">
             Fun, informative, and inspiring guided tours of Tangier
           </h3>
           

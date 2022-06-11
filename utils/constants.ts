@@ -107,8 +107,7 @@ export const toursDets = [
     title1: `Our Tangier Tour`,
     tourList2: [
       'Our public tours always have a maximum of 10 guests per tour to ensure an engaging experience for all.',
-      'The starting point for our tours is outside the central entrance of the seaport',
-      'unless agreed otherwise with the customer. More details will be in the booking confirmation email.',
+      'The starting point for our tours is outside the central entrance of the seaport, unless agreed otherwise with the customer. More details will be in the booking confirmation email.',
       'Please bring your booking confirmation with you.',
       'The tour is not wheelchair accessible as there are some steps.',
     ],
