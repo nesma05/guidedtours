@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const Home: NextPage = () => {
   return (
     <>
-    <Navbar/>
+    <Navbar title='Home Page' description="Start your holiday with us and let us give you inside knowledge on what to see, where to go , and things to do."/>
     <Hero position='center' title='Tangier Guided Tour' text={true} image='/img/tangier-hero.jpg'/>
     <Services/>
     <MyStory/>

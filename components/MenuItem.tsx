@@ -23,11 +23,11 @@ let useClickOutside = (ref: any, handler: any) => {
   })
 }
 
-type menuInfo = {
+type MenuInfo = {
   menuText: String
 }
 
-const MenuItem = ({menuText}:menuInfo) => {
+const MenuItem = ({menuText}:MenuInfo) => {
   const [open, setOpen] = useState(false)
   const [rotate, setRotate] = useState(false)
 
@@ -61,7 +61,7 @@ const MenuItem = ({menuText}:menuInfo) => {
         </svg>
       </span>
       <ul
-        className={`menu-shadow absolute top-12 z-50 h-fit w-[200px] min-w-max rounded bg-white text-base transition duration-200 ease-in-out ${
+        className={`divide-y divide-slate-300 menu-shadow absolute top-12 z-50 h-fit w-[200px] min-w-max rounded bg-white text-base transition duration-200 ease-in-out ${
           open ? '-translate-y-2 opacity-100' : 'translate-y-0 opacity-0'
         }`}
       >
@@ -73,7 +73,7 @@ const MenuItem = ({menuText}:menuInfo) => {
             Group Walking Tour
           </li>
         </NextLink>
-        <hr></hr>
+        
         <NextLink href={'/private-tour'} passHref>
           <li
             className="relative block py-2 pl-5 text-gray-800 transition-all duration-200 hover:bg-black/10 hover:pl-7"

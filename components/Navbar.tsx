@@ -2,12 +2,31 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import NextLink from 'next/link'
 import MenuItem from './MenuItem'
+import Head from 'next/head'
 
-const Navbar = () => {
+type Title = {
+  title: String
+  description:any
+}
+
+const Navbar = ({ title, description }: Title) => {
   const [mobileMenu, setMobileMenu] = useState(false)
 
   return (
     <header>
+      <Head>
+        <title>{title}</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta
+          name="description"
+          content={description}
+        />
+        <meta name="keywords" content="walking tour, private tour, guide tour, tangier, visite tangier" />
+        <meta name="author" content="nesma aboki" />
+      </Head>
       <div className="relative flex flex-wrap items-center justify-between py-3 px-2 sm:py-2 sm:px-8">
         <NextLink href={'/'} passHref>
           <Image
@@ -15,6 +34,7 @@ const Navbar = () => {
             width={200}
             height={70}
             className="cursor-pointer"
+            alt="website logo"
           />
         </NextLink>
         <nav className="order-last flex items-center md:order-none">

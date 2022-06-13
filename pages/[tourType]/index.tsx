@@ -8,7 +8,7 @@ import { toursDets,tours } from '../../utils/constants'
 const Tours:NextPage = ({ tourDets,tour }:any) => {
     return (
       <>
-      <Navbar/>
+      <Navbar title={tour.title} description={tour.description}/>
       <Hero position='left' title={tour.title} image={tour.image}/>
       <TourDetails tourDets={tourDets} tour={tour}/>
       <Footer/>

@@ -70,25 +70,26 @@ const card = ({ tour }: cardProps) => {
           width={550}
           height={300}
           className="relative z-0"
+          alt='tour image'
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4">
         <NextLink href={`/${tour.id}`} passHref>
-          <h4 className="card-title cursor-pointer text-2xl transition duration-300">
+          <h3 className="card-title cursor-pointer text-2xl transition duration-300">
             {tour.title}
-          </h4>
+          </h3>
         </NextLink>
         <p className="sm:text-md flex-1 text-lg font-thin">
           {tour.description}
         </p>
         <div className="flex justify-between">
           <NextLink href={'contact'} passHref>
-            <button className="basis-[47%] rounded-sm bg-[#047857] py-3 font-light text-white transition duration-300 hover:bg-[#064e3b]">
+            <button aria-label='book my tour' className="basis-[47%] rounded-sm bg-[#047857] py-3 font-light text-white transition duration-300 hover:bg-[#064e3b]">
               BOOK MY TOUR
             </button>
           </NextLink>
           <NextLink href={`/${tour.id}`} passHref>
-            <button className="basis-[47%] rounded-sm border-2 border-[#047857] py-3 font-light text-[#047857] transition duration-300 hover:bg-[#064e3b] hover:text-white">
+            <button aria-label='learn more' className="basis-[47%] rounded-sm border-2 border-[#047857] py-3 font-light text-[#047857] transition duration-300 hover:bg-[#064e3b] hover:text-white">
               LEARN MORE
             </button>
           </NextLink>

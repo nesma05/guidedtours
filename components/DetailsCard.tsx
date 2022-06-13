@@ -10,6 +10,7 @@ const DetailsCard = ({ pricesDetails }: any) => {
           layout="fill"
           objectFit="cover"
           objectPosition="center-center"
+          alt='tour image'
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4">
