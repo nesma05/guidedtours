@@ -20,3 +20,7 @@ body {
 .card:hover .card-title {
   @apply text-gray-500
 }
+
+.hero-overlay {
+  
+}

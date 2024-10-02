@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
 import Navbar from '../../components/Navbar'
-import Hero from '../../components/Hero'
 import TourDetails from '../../components/TourDetails'
 import Footer from '../../components/Footer'
 import { toursDets,tours } from '../../utils/constants'
+import Hero from '../../components/Hero'
 
 const Tours:NextPage = ({ tourDets,tour }:any) => {
     return (
       <>
       <Navbar title={tour.title} description={tour.description}/>
-      <Hero position='left' title={tour.title} image={tour.image}/>
+      <Hero titlePosition='left' title={tour.title} imageUrl={tour.image}/>
       <TourDetails tourDets={tourDets} tour={tour}/>
       <Footer/>
       </>

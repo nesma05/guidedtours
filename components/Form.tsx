@@ -31,7 +31,7 @@ export default function Home() {
   }
 
   return (
-    <div className="p-8">
+    <div>
       <h2 className="text-3xl">Contact Us</h2>
       <p className="my-4 max-w-2xl">
         If you have any queries about the tour, please contact Ben sellam (our

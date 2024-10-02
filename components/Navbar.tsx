@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import NextLink from 'next/link'
 import MenuItem from './MenuItem'
 import Head from 'next/head'

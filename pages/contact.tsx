@@ -1,20 +1,21 @@
 import type { NextPage } from 'next'
 import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
+
 import Footer from '../components/Footer'
 import Form from '../components/Form'
 import ContactDetails from '../components/ContactDetails'
+import Hero from '../components/Hero'
 
 const Contact: NextPage = () => {
   return (
     <>
       <Navbar title="Contact Us" description="Contact Us to Book a Tour" />
       <Hero
-        position="left"
+        titlePosition="left"
         title="Contact Us to Book a Tour"
-        image="/img/book-tour.jpg"
+        imageUrl="/img/book-tour.jpg"
       />
-      <section className="flex items-start p-10">
+      <section className="md:flex items-start justify-between p-4 sm:p-10 space-y-6">
         <Form />
         <ContactDetails />
       </section>
